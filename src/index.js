@@ -37,7 +37,7 @@ app.use(
             maxAge: 24 * 60 * 60 * 1000, // 5 minutes
             httpOnly: true,
             sameSite: "none", // "lax" REQUIRED for OAuth redirect in local host
-            secure: true, // must be false for localhost (http)
+            secure: false, // must be false for localhost (http) true for https
         },
     }),
 );
